@@ -1,5 +1,6 @@
 package net.itsmythmaster.mccourse;
 
+import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -34,6 +35,7 @@ public class MCCourseMod
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
