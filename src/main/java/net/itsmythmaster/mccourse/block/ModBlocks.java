@@ -32,7 +32,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
     public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f)
                     .requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
