@@ -1,6 +1,7 @@
 package net.itsmythmaster.mccourse.block;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
+import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -33,7 +34,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f)
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
