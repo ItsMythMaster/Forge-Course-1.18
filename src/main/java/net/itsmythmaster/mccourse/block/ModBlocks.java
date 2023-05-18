@@ -1,6 +1,7 @@
 package net.itsmythmaster.mccourse.block;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
+import net.itsmythmaster.mccourse.block.custom.BouncyBlock;
 import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
@@ -42,7 +43,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> BOUNCY_BLOCK = registerBlock("bouncy_block",
-            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+            () -> new BouncyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
