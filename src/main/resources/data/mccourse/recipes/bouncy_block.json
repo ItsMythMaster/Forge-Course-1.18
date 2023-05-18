@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mccourse:cobalt_ingot"
+    },
+    "S": {
+      "item": "minecraft:rabbit_foot"
+    }
+  },
+  "result": {
+    "item": "mccourse:speedy_block",
+    "count": 1
+  }
+}

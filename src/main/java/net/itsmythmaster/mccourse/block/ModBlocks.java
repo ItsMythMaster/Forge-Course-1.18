@@ -41,6 +41,10 @@ public class ModBlocks {
             () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> BOUNCY_BLOCK = registerBlock("bouncy_block",
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
