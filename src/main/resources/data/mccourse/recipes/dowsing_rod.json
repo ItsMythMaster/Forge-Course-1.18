@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "iIi",
-    "ixi",
-    "iIi"
+    " i ",
+    " i ",
+    "IxI"
   ],
   "key": {
     "I": {
-      "item": "mccourse:raw_cobalt_block"
+      "item": "mccourse:cobalt_block"
     },
     "i": {
-      "item": "mccourse:cobalt_ingot"
+      "item": "minecraft:stick"
     },
     "x": {
       "item": "minecraft:ender_pearl"
