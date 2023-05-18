@@ -79,11 +79,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> CHERRY_BLOSSOM_DOOR = registerBlock("cherry_blossom_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3f)
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)
                     .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> CHERRY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3f)
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)
                     .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
 
