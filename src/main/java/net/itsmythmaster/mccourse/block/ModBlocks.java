@@ -86,6 +86,10 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(1f)
                     .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> COBALT_DOOR = registerBlock("cobalt_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
+                    .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,

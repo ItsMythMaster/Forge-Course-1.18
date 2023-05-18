@@ -52,6 +52,7 @@ public class MCCourseMod
     {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_TRAPDOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBALT_DOOR.get(), RenderType.cutout());
     }
 
     private void setup(final FMLCommonSetupEvent event)

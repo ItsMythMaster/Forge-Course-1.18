@@ -13,7 +13,8 @@
     "mccourse:cobalt_pressure_plate",
     "mccourse:cobalt_fence",
     "mccourse:cobalt_fence_gate",
-    "mccourse:cobalt_wall"
+    "mccourse:cobalt_wall",
+    "mccourse:cobalt_door"
 
   ]
 }
