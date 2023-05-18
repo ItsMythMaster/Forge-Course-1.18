@@ -26,8 +26,11 @@ public class ModItems {
     public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
             () -> new DowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1).durability(16)));
 
-    public static final RegistryObject<Item> COAL_SLIVER= ITEMS.register("coal_sliver",
+    public static final RegistryObject<Item> COAL_SLIVER = ITEMS.register("coal_sliver",
             () -> new CoalSliverItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> TURNIP = ITEMS.register("turnip",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.TURNIP)));
 
     public static void register(IEventBus eventBus)
     {
