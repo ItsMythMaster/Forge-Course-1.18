@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "@#@",
+    "@#@"
+  ],
+  "key": {
+    "#": {
+      "item": "mccourse:cobalt_ingot"
+    },
+    "@": {
+      "item": "mccourse:cobalt_block"
+    }
+  },
+  "result": {
+    "item": "mccourse:cobalt_wall",
+    "count": 12
+  }
+}

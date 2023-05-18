@@ -10,6 +10,9 @@
     "mccourse:cobalt_stairs",
     "mccourse:cobalt_slab",
     "mccourse:cobalt_button",
-    "mccourse:cobalt_pressure_plate"
+    "mccourse:cobalt_pressure_plate",
+    "mccourse:cobalt_fence",
+    "mccourse:cobalt_fence_gate",
+    "mccourse:cobalt_wall"
   ]
 }
