@@ -59,7 +59,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.bouncy_block");
 
     public static final RegistryObject<Block> COBALT_BUTTON = registerBlock("cobalt_button",
-            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3f)
                     .requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_PRESSURE_PLATE = registerBlock("cobalt_pressure_plate",
