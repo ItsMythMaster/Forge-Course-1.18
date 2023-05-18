@@ -6,6 +6,10 @@
     "mccourse:cobalt_ore",
     "mccourse:deepslate_cobalt_ore",
     "mccourse:speedy_block",
-    "mccourse:bouncy_block"
+    "mccourse:bouncy_block",
+    "mccourse:cobalt_stairs",
+    "mccourse:cobalt_slab",
+    "mccourse:cobalt_button",
+    "mccourse:cobalt_pressure_plate"
   ]
 }
