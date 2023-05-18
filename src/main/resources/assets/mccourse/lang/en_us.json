@@ -15,5 +15,10 @@
 
   "itemGroup.coursemodtab": "MCCourse Mod",
 
-  "item.mccourse.dowsing_rod.no_valuables": "No Valuables Found. Sorry!"
+  "item.mccourse.dowsing_rod.no_valuables": "No Valuables Found. Sorry!",
+
+  "tooltip.mccourse.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
+  "tooltip.mccourse.dowsing_rod.tooltip": "Press §l§eLEFT SHIFT§r for more Information!",
+  "tooltip.block.speedy_block": "Makes you §m§bSUPER SPEEDY!!!§r",
+  "tooltip.block.bouncy_block": "Makes you §m§aSUPER BOUNCY!!!§r"
 }
