@@ -28,8 +28,13 @@ public class ModTags {
 
     }
 
+
+
     public static class Items
     {
+
+        public static final Tags.IOptionalNamedTag<Item> COBALT_INGOTS = forgeTag("ingots/cobalt");
+        public static final Tags.IOptionalNamedTag<Item> COBALT_NUGGETS = forgeTag("nuggets/cobalt");
 
         private static Tags.IOptionalNamedTag<Item> tag (String name)
         {
