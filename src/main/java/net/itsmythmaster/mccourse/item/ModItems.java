@@ -1,6 +1,7 @@
 package net.itsmythmaster.mccourse.item;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
+import net.itsmythmaster.mccourse.item.custom.DowsingRodItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> DOWSING_ROD = ITEMS.register("dowsing_rod",
+            () -> new DowsingRodItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1).durability(16)));
 
     public static void register(IEventBus eventBus)
     {
