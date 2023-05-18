@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xIx",
+    "ixi",
+    "xIx"
+  ],
+  "key": {
+    "I": {
+      "item": "mccourse:raw_cobalt_block"
+    },
+    "i": {
+      "item": "mccourse:cobalt_ingot"
+    },
+    "x": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "minecraft:ender_eye"
+  }
+}
