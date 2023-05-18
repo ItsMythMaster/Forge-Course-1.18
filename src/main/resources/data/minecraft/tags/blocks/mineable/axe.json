@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "mccourse:cherry_blossom_door",
+    "mccourse:cherry_blossom_trapdoor"
   ]
 }

@@ -51,32 +51,40 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
-            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+            () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.speedy_block");
 
     public static final RegistryObject<Block> BOUNCY_BLOCK = registerBlock("bouncy_block",
-            () -> new BouncyBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2f)
+            () -> new BouncyBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB, "tooltip.block.bouncy_block");
 
     public static final RegistryObject<Block> COBALT_BUTTON = registerBlock("cobalt_button",
-            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f)
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
                     .requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_PRESSURE_PLATE = registerBlock("cobalt_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.STONE).strength(3f)
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.METAL).strength(3f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_FENCE = registerBlock("cobalt_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f)
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_FENCE_GATE = registerBlock("cobalt_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f)
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> COBALT_WALL = registerBlock("cobalt_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f)
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> CHERRY_BLOSSOM_DOOR = registerBlock("cherry_blossom_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3f)
+                    .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> CHERRY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD).strength(3f)
+                    .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
 
 
