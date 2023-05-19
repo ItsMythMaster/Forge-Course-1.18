@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "mccourse:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "mccourse:cobalt_axe"
+  }
+}

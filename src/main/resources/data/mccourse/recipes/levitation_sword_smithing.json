@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "addition": {
+    "item": "mccourse:cobalt_block"
+  },
+  "result": {
+    "item": "mccourse:levitation_sword"
+  }
+}

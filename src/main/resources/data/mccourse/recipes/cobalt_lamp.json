@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yzy",
+    "yzy",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:redstone"
+    },
+    "y": {
+      "item": "minecraft:glass"
+    },
+    "z": {
+      "item": "mccourse:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "mccourse:cobalt_lamp"
+  }
+}

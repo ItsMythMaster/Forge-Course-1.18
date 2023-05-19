@@ -80,7 +80,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
-            () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+            () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus)
     {

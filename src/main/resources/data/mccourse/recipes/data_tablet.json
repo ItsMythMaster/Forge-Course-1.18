@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "zyz",
+    "zyz",
+    "zxz"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:redstone"
+    },
+    "y": {
+      "item": "minecraft:glass"
+    },
+    "z": {
+      "item": "mccourse:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "mccourse:data_tablet"
+  }
+}

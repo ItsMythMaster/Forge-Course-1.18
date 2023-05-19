@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xyz",
+    " #",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "x": {
+      "item": "mccourse:cobalt_pickaxe"
+    },
+    "y": {
+      "item": "mccourse:cobalt_axe"
+    },
+    "z": {
+      "item": "mccourse:cobalt_shovel"
+    }
+  },
+  "result": {
+    "item": "mccourse:cobalt_paxel"
+  }
+}
