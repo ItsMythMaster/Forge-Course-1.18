@@ -79,6 +79,9 @@ public class ModItems {
             () -> new HorseArmorItem(12, "cobalt",
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
     public static void register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);
