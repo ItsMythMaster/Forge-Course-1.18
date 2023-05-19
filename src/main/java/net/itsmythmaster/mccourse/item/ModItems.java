@@ -1,10 +1,7 @@
 package net.itsmythmaster.mccourse.item;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
-import net.itsmythmaster.mccourse.item.custom.CoalSliverItem;
-import net.itsmythmaster.mccourse.item.custom.DowsingRodItem;
-import net.itsmythmaster.mccourse.item.custom.LevitationSwordItem;
-import net.itsmythmaster.mccourse.item.custom.PaxelItem;
+import net.itsmythmaster.mccourse.item.custom.*;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -67,7 +64,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_CHESTPLATE = ITEMS.register("cobalt_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.CHEST,
+            () -> new ModArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.CHEST,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_LEGGINGS = ITEMS.register("cobalt_leggings",
