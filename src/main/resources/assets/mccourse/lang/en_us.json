@@ -35,6 +35,7 @@
   "item.mccourse.cobalt_chestplate": "Cobalt Chestplate",
   "item.mccourse.cobalt_leggings": "Cobalt Leggings",
   "item.mccourse.cobalt_boots": "Cobalt Boots",
+  "item.mccourse.cobalt_horse_armor": "Cobalt Horse Armor",
 
   "block.mccourse.cherry_blossom_door": "Cherry Blossom Door",
   "block.mccourse.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
@@ -47,5 +48,6 @@
   "tooltip.mccourse.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.mccourse.dowsing_rod.tooltip": "Press §l§eLEFT SHIFT§r for more Information!",
   "tooltip.block.speedy_block": "Makes you §m§bSUPER SPEEDY!!!§r",
-  "tooltip.block.bouncy_block": "Makes you §m§aSUPER BOUNCY!!!§r"
+  "tooltip.block.bouncy_block": "Makes you §m§aSUPER BOUNCY!!!§r",
+  "tooltip.mccourse.armor": "Wear full cobalt set for a §l§4STRENGTH§r bonus!"
 }
