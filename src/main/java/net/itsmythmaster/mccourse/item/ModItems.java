@@ -56,7 +56,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> LEVITATION_SWORD = ITEMS.register("levitation_sword",
-            () -> new LevitationSwordItem(ModTiers.COBALT, 4, 4f,
+            () -> new LevitationSwordItem(ModTiers.COBALT, 1, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_HELMET = ITEMS.register("cobalt_helmet",
