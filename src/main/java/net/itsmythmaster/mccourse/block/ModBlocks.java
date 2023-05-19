@@ -2,6 +2,7 @@ package net.itsmythmaster.mccourse.block;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
 import net.itsmythmaster.mccourse.block.custom.BouncyBlock;
+import net.itsmythmaster.mccourse.block.custom.CobaltLampBlock;
 import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
@@ -89,6 +90,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> COBALT_DOOR = registerBlock("cobalt_door",
             () -> new DoorBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> COBALT_LAMP = registerBlock("cobalt_lamp",
+            () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
 
 
 
