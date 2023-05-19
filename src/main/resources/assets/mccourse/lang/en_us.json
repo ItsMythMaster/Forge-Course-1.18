@@ -49,5 +49,7 @@
   "tooltip.mccourse.dowsing_rod.tooltip": "Press §l§eLEFT SHIFT§r for more Information!",
   "tooltip.block.speedy_block": "Makes you §m§bSUPER SPEEDY!!!§r",
   "tooltip.block.bouncy_block": "Makes you §m§aSUPER BOUNCY!!!§r",
-  "tooltip.mccourse.armor": "Wear full cobalt set for a §l§4STRENGTH§r bonus!"
+  "tooltip.mccourse.armor": "Wear full cobalt set for a §l§4STRENGTH§r bonus!",
+
+  "enchantment.mccourse.lightning_striker": "Lightning Striker"
 }
