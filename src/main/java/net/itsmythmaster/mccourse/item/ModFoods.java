@@ -7,6 +7,6 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
 
     public static final FoodProperties TURNIP = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.2f)
-            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 400, 5), 0.2F)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 5), 2.0f).alwaysEat().build();
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 400, 5), 0.25f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 5), 0.25f).alwaysEat().build();
 }
