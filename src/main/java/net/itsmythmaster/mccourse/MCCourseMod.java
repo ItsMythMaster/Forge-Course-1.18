@@ -4,6 +4,7 @@ import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.itsmythmaster.mccourse.item.ModTiers;
+import net.itsmythmaster.mccourse.sound.ModSounds;
 import net.itsmythmaster.mccourse.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -45,6 +46,7 @@ public class MCCourseMod
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModEnchantments.register(eventBus);
+        ModSounds.register(eventBus);
 
 
         eventBus.addListener(this::setup);
