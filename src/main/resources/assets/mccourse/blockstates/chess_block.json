@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "mccourse:block/chess_block_black" },
+    "clicked=true": { "model": "mccourse:block/chess_block_white" }
+  }
+}

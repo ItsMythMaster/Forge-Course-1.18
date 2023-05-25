@@ -95,6 +95,10 @@ public class ModBlocks {
             () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> CHESS_BLOCK = registerBlock("chess_block",
+            () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
+                    .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,

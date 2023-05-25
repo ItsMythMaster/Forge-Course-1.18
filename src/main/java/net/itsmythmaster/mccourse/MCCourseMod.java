@@ -3,6 +3,8 @@ package net.itsmythmaster.mccourse;
 import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.item.ModItems;
+import net.itsmythmaster.mccourse.item.ModTiers;
+import net.itsmythmaster.mccourse.util.ModItemProperties;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -42,6 +44,7 @@ public class MCCourseMod
         ModBlocks.register(eventBus);
         ModEnchantments.register(eventBus);
 
+
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetUp);
 
@@ -55,6 +58,8 @@ public class MCCourseMod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_DOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_TRAPDOOR.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COBALT_DOOR.get(), RenderType.cutout());
+
+        ModItemProperties.addCustomitemProperties();
     }
 
     private void setup(final FMLCommonSetupEvent event)

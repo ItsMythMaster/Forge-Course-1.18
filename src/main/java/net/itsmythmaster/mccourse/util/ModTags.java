@@ -1,9 +1,9 @@
 package net.itsmythmaster.mccourse.util;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
+import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -12,12 +12,14 @@ public class ModTags {
 
     public static class Blocks
     {
+
         public static final Tags.IOptionalNamedTag<Block> DOWSING_ROD_VALUABLES =
                 tag("dowsing_rod_valuables");
 
         public static final Tags.IOptionalNamedTag<Block> PAXEL_MINEABLE =
                 tag("mineable/paxel");
 
+//        public static final Tag<Block> NEEDS_COBALT_TOOL = ("needs_cobalt_tool");
 
         private static Tags.IOptionalNamedTag<Block> tag (String name)
         {
