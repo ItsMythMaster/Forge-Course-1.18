@@ -1,10 +1,7 @@
 package net.itsmythmaster.mccourse.block;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
-import net.itsmythmaster.mccourse.block.custom.BouncyBlock;
-import net.itsmythmaster.mccourse.block.custom.CobaltLampBlock;
-import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
-import net.itsmythmaster.mccourse.block.custom.TurnipCropBlock;
+import net.itsmythmaster.mccourse.block.custom.*;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.itsmythmaster.mccourse.sound.ModSounds;
@@ -109,11 +106,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PINK_ROSE = registerBlock("pink_rose",
             () -> new FlowerBlock(MobEffects.BLINDNESS, 4,
-                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.COURSE_TAB);
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> POTTED_PINK_ROSE = BLOCKS.register("potted_pink_rose",
             () -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
                     BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)));
+
+    public static final RegistryObject<Block> COBALT_BLASTER = registerBlock("cobalt_blaster",
+            () -> new CobaltBlasterBlock(BlockBehaviour.Properties.of(Material.METAL).noOcclusion()),
+            ModCreativeModeTab.COURSE_TAB);
 
 
 
