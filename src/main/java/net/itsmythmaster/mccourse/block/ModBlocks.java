@@ -4,6 +4,7 @@ import net.itsmythmaster.mccourse.MCCourseMod;
 import net.itsmythmaster.mccourse.block.custom.BouncyBlock;
 import net.itsmythmaster.mccourse.block.custom.CobaltLampBlock;
 import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
+import net.itsmythmaster.mccourse.block.custom.TurnipCropBlock;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.minecraft.network.chat.Component;
@@ -100,7 +101,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> TURNIP_CROP = BLOCKS.register("turnip_crop",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
+            () -> new TurnipCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
                     .noCollission().noOcclusion()));
 
 
