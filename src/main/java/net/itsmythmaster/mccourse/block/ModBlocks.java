@@ -99,6 +99,10 @@ public class ModBlocks {
             () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.COURSE_TAB);
 
+    public static final RegistryObject<Block> TURNIP_CROP = BLOCKS.register("turnip_crop",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
+                    .noCollission().noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block,

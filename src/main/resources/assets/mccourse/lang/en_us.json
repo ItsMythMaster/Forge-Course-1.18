@@ -14,7 +14,10 @@
   "item.mccourse.raw_cobalt": "Raw Cobalt",
   "item.mccourse.dowsing_rod": "Dowsing Rod",
   "item.mccourse.coal_sliver": "Coal Sliver",
+
   "item.mccourse.turnip": "Turnip",
+  "item.mccourse.turnip_seeds": "Turnip Seeds",
+  "item.mccourse.turnip_crop": "Turnip Crop",
 
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
