@@ -7,6 +7,7 @@ import net.itsmythmaster.mccourse.block.custom.SpeedyBlock;
 import net.itsmythmaster.mccourse.block.custom.TurnipCropBlock;
 import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
+import net.itsmythmaster.mccourse.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
@@ -95,7 +96,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COBALT_LAMP = registerBlock("cobalt_lamp",
             () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)
-                    .requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
+                    .requiresCorrectToolForDrops().sound(ModSounds.COBALT_LAMP_SOUNDS)
+                    .lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)), ModCreativeModeTab.COURSE_TAB);
 
     public static final RegistryObject<Block> CHESS_BLOCK = registerBlock("chess_block",
             () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL).strength(2f)

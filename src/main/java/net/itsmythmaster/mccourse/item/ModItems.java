@@ -3,6 +3,7 @@ package net.itsmythmaster.mccourse.item;
 import net.itsmythmaster.mccourse.MCCourseMod;
 import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.item.custom.*;
+import net.itsmythmaster.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -82,6 +83,14 @@ public class ModItems {
 
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> BAR_BRAWL_RECORD = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(4, ModSounds.BAR_BRAWL,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
+
+    public static final RegistryObject<Item> AVENGERS_THEME_RECORD = ITEMS.register("avengers_theme_music_disc",
+            () -> new RecordItem(4, ModSounds.AVENGERS_THEME,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).stacksTo(1)));
 
     public static final RegistryObject<Item> TURNIP_SEEDS = ITEMS.register("turnip_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TURNIP_CROP.get(),

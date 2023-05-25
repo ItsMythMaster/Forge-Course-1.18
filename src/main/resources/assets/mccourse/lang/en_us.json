@@ -15,6 +15,11 @@
   "item.mccourse.dowsing_rod": "Dowsing Rod",
   "item.mccourse.coal_sliver": "Coal Sliver",
 
+  "item.mccourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.mccourse.avengers_theme_music_disc": "Avengers Theme Music Disc",
+  "item.mccourse.avengers_theme_music_disc.desc": "Alan Silvestri - Avengers Theme (R2D2)",
+
   "item.mccourse.turnip": "Turnip",
   "item.mccourse.turnip_seeds": "Turnip Seeds",
   "block.mccourse.turnip_crop": "Turnip Crop",

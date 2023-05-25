@@ -1,0 +1,54 @@
+{
+  "dowsing_rod_found_ore": {
+    "subtitle": "mccourse.dowsing_rod_found_ore",
+    "sounds": [
+      "mccourse:dowsing_rod_found_ore"
+    ]
+  },
+  "cobalt_lamp_break": {
+    "subtitle": "mccourse.cobalt_lamp_break",
+    "sounds": [
+      "mccourse:cobalt_lamp_break"
+    ]
+  },
+  "cobalt_lamp_step": {
+    "subtitle": "mccourse.cobalt_lamp_step",
+    "sounds": [
+      "mccourse:cobalt_lamp_step"
+    ]
+  },
+  "cobalt_lamp_place": {
+    "subtitle": "mccourse.cobalt_lamp_place",
+    "sounds": [
+      "mccourse:cobalt_lamp_place"
+    ]
+  },
+  "cobalt_lamp_hit": {
+    "subtitle": "mccourse.cobalt_lamp_hit",
+    "sounds": [
+      "mccourse:cobalt_lamp_hit"
+    ]
+  },
+  "cobalt_lamp_fall": {
+    "subtitle": "mccourse.cobalt_lamp_fall",
+    "sounds": [
+      "mccourse:cobalt_lamp_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "mccourse:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+  "avengers_theme": {
+    "sounds": [
+      {
+        "name": "mccourse:avengers_theme",
+        "stream": true
+      }
+    ]
+  }
+}
