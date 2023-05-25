@@ -17,7 +17,9 @@
 
   "item.mccourse.turnip": "Turnip",
   "item.mccourse.turnip_seeds": "Turnip Seeds",
-  "item.mccourse.turnip_crop": "Turnip Crop",
+  "block.mccourse.turnip_crop": "Turnip Crop",
+  "block.mccourse.pink_rose": "Pink Rose",
+  "block.mccourse.potted_pink_rose": "Potted Pink Rose",
 
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",

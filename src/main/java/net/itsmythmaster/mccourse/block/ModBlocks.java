@@ -9,6 +9,7 @@ import net.itsmythmaster.mccourse.item.ModCreativeModeTab;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -103,6 +104,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> TURNIP_CROP = BLOCKS.register("turnip_crop",
             () -> new TurnipCropBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS)
                     .noCollission().noOcclusion()));
+
+    public static final RegistryObject<Block> PINK_ROSE = registerBlock("pink_rose",
+            () -> new FlowerBlock(MobEffects.BLINDNESS, 4,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.COURSE_TAB);
+
+    public static final RegistryObject<Block> POTTED_PINK_ROSE = BLOCKS.register("potted_pink_rose",
+            () -> new FlowerPotBlock(null, ModBlocks.PINK_ROSE,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)));
 
 
 
