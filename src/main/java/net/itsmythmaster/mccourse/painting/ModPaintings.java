@@ -17,10 +17,10 @@ public class ModPaintings {
             PAINTING_MOTIVES.register("plant", () -> new Motive(16, 16));
 
     public static final RegistryObject<Motive> WANDERER =
-            PAINTING_MOTIVES.register("wanderer", () -> new Motive(16, 16));
+            PAINTING_MOTIVES.register("wanderer", () -> new Motive(16, 32));
 
     public static final RegistryObject<Motive> SUNSET =
-            PAINTING_MOTIVES.register("sunset", () -> new Motive(16, 16));
+            PAINTING_MOTIVES.register("sunset", () -> new Motive(32, 16));
 
     public static void register(IEventBus eventBus)
     {
