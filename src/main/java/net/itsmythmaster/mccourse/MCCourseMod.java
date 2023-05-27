@@ -2,6 +2,7 @@ package net.itsmythmaster.mccourse;
 
 import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
+import net.itsmythmaster.mccourse.fluid.ModFluids;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.itsmythmaster.mccourse.item.ModTiers;
 import net.itsmythmaster.mccourse.painting.ModPaintings;
@@ -49,6 +50,7 @@ public class MCCourseMod
         ModEnchantments.register(eventBus);
         ModSounds.register(eventBus);
         ModPaintings.register(eventBus);
+        ModFluids.register(eventBus);
 
 
         eventBus.addListener(this::setup);

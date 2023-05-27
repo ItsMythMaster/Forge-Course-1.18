@@ -2,6 +2,7 @@ package net.itsmythmaster.mccourse.item;
 
 import net.itsmythmaster.mccourse.MCCourseMod;
 import net.itsmythmaster.mccourse.block.ModBlocks;
+import net.itsmythmaster.mccourse.fluid.ModFluids;
 import net.itsmythmaster.mccourse.item.custom.*;
 import net.itsmythmaster.mccourse.sound.ModSounds;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -100,6 +101,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> TURNIP_SEEDS = ITEMS.register("turnip_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TURNIP_CROP.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> HONEY_BUCKET = ITEMS.register("honey_bucket",
+            () -> new BucketItem(ModFluids.HONEY_FLUID,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus)
