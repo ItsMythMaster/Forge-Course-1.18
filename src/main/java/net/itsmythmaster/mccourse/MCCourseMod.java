@@ -1,13 +1,18 @@
 package net.itsmythmaster.mccourse;
 
 import net.itsmythmaster.mccourse.block.ModBlocks;
+import net.itsmythmaster.mccourse.block.entity.ModBlockEntities;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.fluid.ModFluids;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.itsmythmaster.mccourse.item.ModTiers;
 import net.itsmythmaster.mccourse.painting.ModPaintings;
+import net.itsmythmaster.mccourse.recipe.ModRecipes;
+import net.itsmythmaster.mccourse.screen.CobaltBlasterScreen;
+import net.itsmythmaster.mccourse.screen.ModMenuTypes;
 import net.itsmythmaster.mccourse.sound.ModSounds;
 import net.itsmythmaster.mccourse.util.ModItemProperties;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -51,6 +56,9 @@ public class MCCourseMod
         ModSounds.register(eventBus);
         ModPaintings.register(eventBus);
         ModFluids.register(eventBus);
+        ModBlockEntities.register(eventBus);
+        ModMenuTypes.register(eventBus);
+        ModRecipes.register(eventBus);
 
 
         eventBus.addListener(this::setup);
@@ -79,6 +87,8 @@ public class MCCourseMod
 
 
         ModItemProperties.addCustomitemProperties();
+
+        MenuScreens.register(ModMenuTypes.COBALT_BLASTER_MENU.get(), CobaltBlasterScreen::new);
     }
 
     private void setup(final FMLCommonSetupEvent event)
