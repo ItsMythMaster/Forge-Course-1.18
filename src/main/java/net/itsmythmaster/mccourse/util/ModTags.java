@@ -19,7 +19,9 @@ public class ModTags {
         public static final Tags.IOptionalNamedTag<Block> PAXEL_MINEABLE =
                 tag("mineable/paxel");
 
-//        public static final Tag<Block> NEEDS_COBALT_TOOL = ("needs_cobalt_tool");
+        public static final Tags.IOptionalNamedTag<Block> NEEDS_COBALT_TOOL =
+                tag("needs_cobalt_tool");
+        
 
         private static Tags.IOptionalNamedTag<Block> tag (String name)
         {

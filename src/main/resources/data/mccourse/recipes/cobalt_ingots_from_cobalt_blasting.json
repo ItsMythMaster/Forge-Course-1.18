@@ -1,0 +1,15 @@
+{
+  "type": "mccourse:cobalt_blasting",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_cobalt"
+    },
+    {
+      "item": "mccourse:raw_cobalt"
+    }
+  ],
+  "output": {
+    "item": "mccourse:cobalt_ingot",
+    "count": 4
+  }
+}

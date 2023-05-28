@@ -35,31 +35,31 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB).food(ModFoods.TURNIP)));
 
     public static final RegistryObject<Item> COBALT_SWORD = ITEMS.register("cobalt_sword",
-            () -> new SwordItem(ModTiers.COBALT, 4, 3f,
+            () -> new SwordItem(ModTiers.COBALT, 4, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_PICKAXE = ITEMS.register("cobalt_pickaxe",
-            () -> new PickaxeItem(ModTiers.COBALT, 2, 3f,
+            () -> new PickaxeItem(ModTiers.COBALT, 2, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_AXE = ITEMS.register("cobalt_axe",
-            () -> new AxeItem(ModTiers.COBALT, 2, 3f,
+            () -> new AxeItem(ModTiers.COBALT, 2, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_SHOVEL= ITEMS.register("cobalt_shovel",
-            () -> new ShovelItem(ModTiers.COBALT, 2, 3f,
+            () -> new ShovelItem(ModTiers.COBALT, 2, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_HOE = ITEMS.register("cobalt_hoe",
-            () -> new HoeItem(ModTiers.COBALT, 2, 3f,
+            () -> new HoeItem(ModTiers.COBALT, 2, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_PAXEL = ITEMS.register("cobalt_paxel",
-            () -> new PaxelItem(ModTiers.COBALT, 4f, 4f,
+            () -> new PaxelItem(ModTiers.COBALT, 4f, 2f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> LEVITATION_SWORD = ITEMS.register("levitation_sword",
-            () -> new LevitationSwordItem(ModTiers.COBALT, 1, 4f,
+            () -> new LevitationSwordItem(ModTiers.COBALT, 1, 1f,
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static final RegistryObject<Item> COBALT_HELMET = ITEMS.register("cobalt_helmet",

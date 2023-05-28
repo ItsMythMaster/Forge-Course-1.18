@@ -34,6 +34,16 @@ public class LightningStrikerEnchantment extends Enchantment {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
                         MobSpawnType.TRIGGERED, true, true);
             }
+            if(pLevel == 3)
+            {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
+                        MobSpawnType.TRIGGERED, true, true);
+
+                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
+                        MobSpawnType.TRIGGERED, true, true);
+                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
+                        MobSpawnType.TRIGGERED, true, true);
+            }
         }
 
         super.doPostAttack(pAttacker, pTarget, pLevel);
@@ -41,6 +51,6 @@ public class LightningStrikerEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }
 }

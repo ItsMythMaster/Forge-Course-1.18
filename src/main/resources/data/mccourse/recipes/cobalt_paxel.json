@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "xyz",
-    " # ",
+    "q# ",
     " # "
   ],
   "key": {
@@ -17,6 +17,9 @@
     },
     "z": {
       "item": "mccourse:cobalt_shovel"
+    },
+    "q": {
+      "item": "mccourse:cobalt_hoe"
     }
   },
   "result": {
