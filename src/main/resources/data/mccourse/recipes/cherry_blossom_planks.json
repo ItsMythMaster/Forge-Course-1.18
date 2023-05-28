@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "planks",
   "ingredients": [
     {
       "tag": "mccourse:cherry_blossom_logs"
