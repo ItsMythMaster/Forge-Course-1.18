@@ -3,6 +3,7 @@ package net.itsmythmaster.mccourse.event;
 import net.itsmythmaster.mccourse.MCCourseMod;
 import net.itsmythmaster.mccourse.command.ReturnHomeCommand;
 import net.itsmythmaster.mccourse.command.SetHomeCommand;
+import net.itsmythmaster.mccourse.config.MCCourseClientConfigs;
 import net.itsmythmaster.mccourse.util.KaupenTitleScreen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.world.entity.player.Player;
@@ -50,7 +51,8 @@ public class ModEvents {
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
     public static void openGui(ScreenOpenEvent event) {
-        if (event.getScreen() instanceof TitleScreen && !(event.getScreen() instanceof KaupenTitleScreen)) {
+        if (MCCourseClientConfigs.CUSTOM_TITLE_SCREEN.get() &&
+                event.getScreen() instanceof TitleScreen && !(event.getScreen() instanceof KaupenTitleScreen)) {
             event.setScreen(new KaupenTitleScreen());
         }
     }

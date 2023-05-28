@@ -3,6 +3,8 @@ package net.itsmythmaster.mccourse;
 import net.itsmythmaster.mccourse.block.ModBlocks;
 import net.itsmythmaster.mccourse.block.ModWoodTypes;
 import net.itsmythmaster.mccourse.block.entity.ModBlockEntities;
+import net.itsmythmaster.mccourse.config.MCCourseClientConfigs;
+import net.itsmythmaster.mccourse.config.MCCourseCommonConfigs;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.fluid.ModFluids;
 import net.itsmythmaster.mccourse.item.ModItems;
@@ -29,7 +31,9 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
@@ -68,6 +72,10 @@ public class MCCourseMod
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetUp);
+
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MCCourseClientConfigs.SPEC, "mccourse-client.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MCCourseCommonConfigs.SPEC, "mccourse-common.toml");
 
 
         // Register ourselves for server and other game events we are interested in
