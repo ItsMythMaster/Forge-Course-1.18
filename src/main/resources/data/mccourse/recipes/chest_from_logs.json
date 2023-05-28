@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
-    "X X",
-    "XXX"
+    "###",
+    "# #",
+    "###"
   ],
   "key": {
-    "X": {
-      "tags": "minecraft:logs"
+    "#": {
+      "tag": "minecraft:logs"
     }
   },
   "result": {
