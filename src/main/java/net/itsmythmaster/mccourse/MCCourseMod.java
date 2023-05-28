@@ -1,6 +1,7 @@
 package net.itsmythmaster.mccourse;
 
 import net.itsmythmaster.mccourse.block.ModBlocks;
+import net.itsmythmaster.mccourse.block.ModWoodTypes;
 import net.itsmythmaster.mccourse.block.entity.ModBlockEntities;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.fluid.ModFluids;
@@ -15,10 +16,14 @@ import net.itsmythmaster.mccourse.util.ModItemProperties;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -89,6 +94,8 @@ public class MCCourseMod
         ModItemProperties.addCustomitemProperties();
 
         MenuScreens.register(ModMenuTypes.COBALT_BLASTER_MENU.get(), CobaltBlasterScreen::new);
+
+        WoodType.register(ModWoodTypes.CHERRY_BLOSSOM);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -98,6 +105,9 @@ public class MCCourseMod
             ComposterBlock.COMPOSTABLES.put(ModItems.TURNIP.get(), 0.65f);
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.PINK_ROSE.getId(), ModBlocks.POTTED_PINK_ROSE);
+
+            BlockEntityRenderers.register(ModBlockEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
+            Sheets.addWoodType(ModWoodTypes.CHERRY_BLOSSOM);
         });
     }
 
