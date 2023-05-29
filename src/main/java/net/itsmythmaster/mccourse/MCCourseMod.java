@@ -101,6 +101,9 @@ public class MCCourseMod
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CHERRY_BLOSSOM_SAPLING.get(), RenderType.cutout());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WINTER_WINDOW.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.FRAME_GLASS.get(), RenderType.translucent());
+
 
         ModItemProperties.addCustomitemProperties();
 

@@ -16,6 +16,7 @@
   "item.mccourse.cobalt_nugget": "Cobalt Nugget",
   "item.mccourse.raw_cobalt": "Raw Cobalt",
   "item.mccourse.coal_sliver": "Coal Sliver",
+  "item.mccourse.magic_dust": "Magic Dust",
 
   "item.mccourse.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.mccourse.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
@@ -51,6 +52,8 @@
   "block.mccourse.chess_block": "Chess Block",
 
   "block.mccourse.cobalt_blaster": "Cobalt Blaster",
+
+  "block.mccourse.winter_window": "Winter Window",
 
   "item.mccourse.cobalt_helmet": "Cobalt Helmet",
   "item.mccourse.cobalt_chestplate": "Cobalt Chestplate",
