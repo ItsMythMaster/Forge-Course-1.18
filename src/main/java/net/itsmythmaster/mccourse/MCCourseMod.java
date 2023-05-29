@@ -5,15 +5,18 @@ import net.itsmythmaster.mccourse.block.ModWoodTypes;
 import net.itsmythmaster.mccourse.block.entity.ModBlockEntities;
 import net.itsmythmaster.mccourse.config.MCCourseClientConfigs;
 import net.itsmythmaster.mccourse.config.MCCourseCommonConfigs;
+import net.itsmythmaster.mccourse.effect.ModEffects;
 import net.itsmythmaster.mccourse.enchantment.ModEnchantments;
 import net.itsmythmaster.mccourse.fluid.ModFluids;
 import net.itsmythmaster.mccourse.item.ModItems;
 import net.itsmythmaster.mccourse.item.ModTiers;
 import net.itsmythmaster.mccourse.painting.ModPaintings;
+import net.itsmythmaster.mccourse.potion.ModPotions;
 import net.itsmythmaster.mccourse.recipe.ModRecipes;
 import net.itsmythmaster.mccourse.screen.CobaltBlasterScreen;
 import net.itsmythmaster.mccourse.screen.ModMenuTypes;
 import net.itsmythmaster.mccourse.sound.ModSounds;
+import net.itsmythmaster.mccourse.util.BetterBrewingRecipe;
 import net.itsmythmaster.mccourse.util.ModItemProperties;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -21,12 +24,15 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -68,6 +74,8 @@ public class MCCourseMod
         ModBlockEntities.register(eventBus);
         ModMenuTypes.register(eventBus);
         ModRecipes.register(eventBus);
+        ModEffects.register(eventBus);
+        ModPotions.register(eventBus);
 
 
         eventBus.addListener(this::setup);
@@ -122,6 +130,9 @@ public class MCCourseMod
 
             BlockEntityRenderers.register(ModBlockEntities.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
             Sheets.addWoodType(ModWoodTypes.CHERRY_BLOSSOM);
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    Items.SNOWBALL, ModPotions.FREEZE_POTION.get()));
         });
     }
 

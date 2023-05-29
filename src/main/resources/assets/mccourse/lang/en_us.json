@@ -23,6 +23,9 @@
   "item.mccourse.avengers_theme_music_disc": "Avengers Theme Music Disc",
   "item.mccourse.avengers_theme_music_disc.desc": "Alan Silvestri - Avengers Theme (R2D2)",
 
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
 
   "item.mccourse.honey_bucket": "Honey Bucket",
 
@@ -83,5 +86,6 @@
   "tooltip.block.bouncy_block": "Makes you §m§aSUPER BOUNCY!!!§r",
   "tooltip.mccourse.armor": "Wear full cobalt set for a §l§4STRENGTH§r bonus!",
 
-  "enchantment.mccourse.lightning_striker": "Lightning Striker"
+  "enchantment.mccourse.lightning_striker": "Lightning Striker",
+  "effect.mccourse.freeze": "Freeze"
 }
