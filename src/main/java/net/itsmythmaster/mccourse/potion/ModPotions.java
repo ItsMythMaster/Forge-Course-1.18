@@ -13,8 +13,8 @@ public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS
             = DeferredRegister.create(ForgeRegistries.POTIONS, MCCourseMod.MOD_ID);
 
-    public static RegistryObject<Potion> FREEZE_POTION = POTIONS.register("freeze_potion",
-            () -> new Potion(new MobEffectInstance(ModEffects.FREEZE.get(), 200, 0)));
+    public static RegistryObject<Potion> FREEZING_POTION = POTIONS.register("freezing_potion",
+            () -> new Potion(new MobEffectInstance(ModEffects.FREEZING.get(), 200, 0)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

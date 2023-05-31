@@ -4,8 +4,8 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 
-public class FreezeEffect extends MobEffect {
-    public FreezeEffect(MobEffectCategory mobEffectCategory, int i) {
+public class FreezingEffect extends MobEffect {
+    public FreezingEffect(MobEffectCategory mobEffectCategory, int i) {
         super(MobEffectCategory.HARMFUL, 3124687);
     }
 

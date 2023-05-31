@@ -132,7 +132,7 @@ public class MCCourseMod
             Sheets.addWoodType(ModWoodTypes.CHERRY_BLOSSOM);
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    Items.SNOWBALL, ModPotions.FREEZE_POTION.get()));
+                    Items.SNOWBALL, ModPotions.FREEZING_POTION.get()));
         });
     }
 
